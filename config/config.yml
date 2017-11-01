@@ -343,4 +343,4 @@ hostname_configure: true
 hostname_fqdn: "{{ vagrant_hostname }}"
 ssh_home: "{{ drupal_core_path }}"
 
-pre_provision_tasks_dir: "{{ config_dir }}/../scripts/post-provision.yml"
+post_provision_tasks_dir: "{{ config_dir }}/../scripts/post-provision.yml"

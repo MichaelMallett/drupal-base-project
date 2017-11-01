@@ -1,6 +1,6 @@
 ---
+# Copy template to git commit hooks.
 - template:
-    name: Copy git commit hook to .git hooks directory
     src: "{{ config_dir }}/../code/templates/pre-commit.j2"
     dest: "{{ drupal_composer_install_dir }}/.git/hooks/pre-commit"
     mode: "a+x"
