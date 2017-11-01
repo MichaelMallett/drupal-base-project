@@ -220,7 +220,7 @@ installed_extras:
   # - solr
   # - tideways
   # - upload-progress
-  - varnish
+  # - varnish
   - xdebug
   # - xhprof # use `tideways` if you're installing PHP 7+
 
@@ -342,3 +342,5 @@ known_hosts_path: ~/.ssh/known_hosts
 hostname_configure: true
 hostname_fqdn: "{{ vagrant_hostname }}"
 ssh_home: "{{ drupal_core_path }}"
+
+pre_provision_tasks_dir: "{{ config_dir }}/../scripts/post-provision.yml"
