@@ -20,7 +20,7 @@ fi
 # simple check if code sniffer is set up correctly
 if [ ! -x $PHPCS_BIN ]; then
     echo "PHP CodeSniffer bin not found or executable -> $PHPCS_BIN"
-    exit 1
+    exit 0
 fi
 
 # stolen from template file
